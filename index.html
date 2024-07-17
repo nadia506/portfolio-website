@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadia's Portfolio</title>
+    <meta name="description" content="Portfolio for Nadia Bokyung Kim" />
+    <meta name="author" content="Bokyung Nadia Kim" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <h1 class="header__logo__title"><a href="#">Bokyung Nadia Kim</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#projects">Projects</a></li>
+          <li>
+            <a class="header__menu__item" href="#experience">Experience</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <section id="home" class="home fade-in">
+      <div class="home__container">
+        <div class="home__avatar-wrapper">
+          <img
+            class="home__avatar"
+            src="images/profile.JPG"
+            alt="Nadia's profile"
+          />
+        </div>
+        <div class="home__intro">
+          <h2 class="home__title">
+            Hello, I'm
+            <strong class="home__title--strong">Bokyung Nadia Kim</strong>
+          </h2>
+          <p class="home__description">
+            I'm a passionate software engineer specializing in web development.
+            Leveraging my strong background in Computer Science and
+            Neuroscience, I am committed to craft user-friendly web applications
+            that seamlessly blend functionality and user experience.
+          </p>
+          <a class="home__contact" href="#contact">Contact Me</a>
+          <a class="home__contact" href="#contact">RESUME</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about fade-in">
+      <h2 class="about__title">About Me</h2>
+      <p class="about__description">
+        Learn more about my background, skills, and experience.
+      </p>
+      <div class="about__content">
+        <p>
+          Hello! I'm Bokyung Nadia Kim, a dedicated software engineer passionate
+          about creating innovative and user-friendly web applications. With a
+          strong foundation in both front-end and back-end development, I enjoy
+          tackling challenging projects and continuously improving my skill set.
+        </p>
+        <p>
+          Currently, I am pursuing a Master's degree in Engineering Management
+          with a focus on cybersecurity at Johns Hopkins University. During my
+          undergraduate studies, I dual-majored in Computer Science and
+          Neuroscience, concentrating on Human-Computer Interaction (HCI)
+          research, and gained experience as a full-stack software developer.
+        </p>
+        <p>
+          Over the years, I have worked in a lab environment as a researcher and
+          full-stack engineer, and have also gained valuable experience as a
+          software engineer during my internships. These experiences have
+          provided me with practical knowledge and have further enhanced my
+          technical expertise. Looking ahead, I am excited to embrace new
+          technologies and tackle new challenges to push the boundaries of
+          innovation.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills fade-in">
+      <h2 class="skills__title">My Skills</h2>
+      <div class="skills__content">
+        <div class="skills__item">
+          <div class="skills__icon"><i class="fas fa-code"></i></div>
+          <h3 class="skills__subtitle">Frontend</h3>
+          <ul class="skills__list">
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fas fa-code"></i> TypeScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-vuejs"></i> Vue</li>
+            <li><i class="fas fa-fire"></i> Firebase</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <div class="skills__icon"><i class="fas fa-server"></i></div>
+          <h3 class="skills__subtitle">Backend</h3>
+          <ul class="skills__list">
+            <li><i class="fab fa-node"></i> Node.js</li>
+            <li><i class="fas fa-server"></i> Express.js</li>
+            <li><i class="fas fa-database"></i> RESTful APIs</li>
+            <li><i class="fas fa-project-diagram"></i> GraphQL</li>
+            <li><i class="fas fa-database"></i> MySQL</li>
+            <li><i class="fab fa-python"></i> Python</li>
+          </ul>
+        </div>
+        <div class="skills__item">
+          <div class="skills__icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3 class="skills__subtitle">Styling & Design</h3>
+          <ul class="skills__list">
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-sass"></i> SCSS</li>
+            <li><i class="fas fa-paint-brush"></i> Styled Components</li>
+            <li><i class="fab fa-figma"></i> Figma</li>
+            <li><i class="fab fa-css3-alt"></i> Tailwind CSS</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fas fa-th-large"></i> CSS Module</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects fade-in">
+      <h2 class="projects__title">My Projects</h2>
+      <div class="projects__content">
+        <div class="projects__item">
+          <img
+            src="images/project1.jpg"
+            alt="Project 1"
+            class="projects__img"
+          />
+          <h3 class="projects__subtitle">
+            <a
+              href="https://sp23-oose-project-team-16.vercel.app/"
+              target="_blank"
+              >FocusGuardian <i class="fas fa-external-link-alt"></i
+            ></a>
+          </h3>
+          <p class="projects__description">
+            Diagnoses ADHD with innovative mouse-tracking and eye-tracking
+            technology.
+          </p>
+        </div>
+        <div class="projects__item">
+          <img
+            src="images/project2.jpg"
+            alt="Project 2"
+            class="projects__img"
+          />
+          <h3 class="projects__subtitle">
+            <a href="https://presentmode.netlify.app/" target="_blank"
+              >PresentMode <i class="fas fa-external-link-alt"></i
+            ></a>
+          </h3>
+          <p class="projects__description">
+            A simple and modern e-commerce platform primarily for clothing.
+            Features outfits inspired by those worn by my favorite K-pop idol.
+          </p>
+        </div>
+        <div class="projects__item">
+          <img
+            src="images/project3.jpg"
+            alt="Project 3"
+            class="projects__img"
+          />
+          <h3 class="projects__subtitle">
+            <a href="https://codelingual-converter.netlify.app/" target="_blank"
+              >CodeLingual <i class="fas fa-external-link-alt"></i
+            ></a>
+          </h3>
+          <p class="projects__description">
+            Converts your code from one language to another.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience fade-in">
+      <h2 class="experience__title">Experience</h2>
+      <div class="experience__content">
+        <div class="experience__item">
+          <h3 class="experience__subtitle">Spresto (Summer 2022)</h3>
+          <p class="experience__description">
+            Worked as a full-stack software engineering intern, where I
+            redesigned and enhanced the company's web page to improve
+            functionality and design, elevating the user experience.
+            Additionally, I created a central hub for website management and
+            modularized server-side databases.
+          </p>
+        </div>
+        <div class="experience__item">
+          <h3 class="experience__subtitle">Samsung (Summer 2023)</h3>
+          <p class="experience__description">
+            Worked as a Visual Display software engineer intern, gaining
+            hands-on experience with 3D display technology and its
+            functionalities. I defined depth maps for 3D displays to enhance
+            realism and contributed to interactive 3D environments using Unity
+            and Leap.js.
+          </p>
+        </div>
+        <div class="experience__item">
+          <h3 class="experience__subtitle">
+            Research Assistant at Intutitive Computing Lab, JHU (Summer 2024)
+          </h3>
+          <p class="experience__description">
+            Conducted Human-Computer Interaction (HCI) research on Voice
+            Assistants, focusing on their ability to keep users accountable for
+            their sleep patterns. Integrated smartwatch data with the voice
+            assistant to test its feasibility in helping users maintain healthy
+            sleep habits.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact fade-in">
+      <h2 class="contact__title">Contact Me</h2>
+      <p class="contact__description">
+        I'd love to hear from you! Whether you have a question or just want to
+        say hi, feel free to drop a message.
+      </p>
+      <form
+        class="contact__form"
+        action="https://formspree.io/f/xrbzbrlw"
+        method="POST"
+      >
+        <div class="contact__form-group">
+          <label for="name" class="contact__label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="contact__input"
+            required
+          />
+        </div>
+        <div class="contact__form-group">
+          <label for="email" class="contact__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="_replyto"
+            class="contact__input"
+            required
+          />
+        </div>
+        <div class="contact__form-group">
+          <label for="message" class="contact__label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="contact__textarea"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="contact__button">Send Message</button>
+      </form>
+      <div class="contact__social">
+        <a href="https://github.com/nadia506" class="contact__social-link"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/bokyung-kim-365607243/"
+          class="contact__social-link"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:kbkllmlk17@gmail.com" class="contact__social-link"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">
+          &copy; 2024 Nadia Bokyung Kim. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
